@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Something else page";
+}
+
+<!-- Start of HTML code that is rendered in place of RenderBody() method -->
+<div>
+    <input type="button" value="This is my almighty content to render in place of RenderBody() line in _Layout.cshtml file!"/>         
+</div>
+
+<!-- End of HTML code that is rendered in place of RenderBody() method -->
+
+@section Header{
+    <!-- Neka divlja tablica -->
+   <h2>
+    Hi I am some text from SomeOtherView that I wanted to put inside the header of view-that-all-views-share (_Layout.cshtml)
+    aaaaand precisely "in the place" RenderSection("Header", false) line (in the same file -> _Layout.cshtml)... It's like somebody
+       copy pasted me... jeez :O
+</h2>
+}
+
+@*@section Footer{
+    <!-- I dont have anything to put in the "RenderSection("Footer", false) part of /Shared/_Layout.cshtml file,
+        therefor this whole area is a comment-->
+}*@

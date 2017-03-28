@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!-- Start of HTML code that is rendered in place of RenderBody() method -->
+<!-- This is the content HTML of Index.cshtml page. It will be rendered (think like copy/paste of the following code)
+    at place of RenderBody() line in _Layout.cshtml file-->
+<div>
+    This is some div in index cshtml, It's like somebody copy pasted this code and glued it with patafix in the _Layout.cshtml
+    file at RenderBody() line... because.... this is my only content I have. Or let's call it - my body (no pun intended).
+    WHAT SORCERY IS THIS :O!
+</div>
+
+<!-- End of HTML code that is rendered in place of RenderBody() method -->
+
+@section Header{
+    <!-- Neka divlja tablica -->
+    <table style="width:100px; border: 3px dashed green; margin-left: 20px; margin-top:  20px;">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+}
+
+@section Footer{
+    <div id="hello_i_am_div_from_index_html" style="width: 100px; height: 50px;border:2px solid blue"> Bla bla bla </div>
+}
